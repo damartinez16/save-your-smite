@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Scema;
+const Schema = mongoose.Schema;
 
 const itemSchema = new Schema({
     DeviceName: String,
@@ -17,7 +17,7 @@ const itemSchema = new Schema({
         ItemTier: Number,
         SecondaryDescription: String,
         Price: Number,
-        Type: String,
+        type: String,
         itemIcon_URL: String
     },
 }, {
@@ -25,4 +25,4 @@ const itemSchema = new Schema({
 });
 
 
-module.exports = mongoos.model('Item', itemSchema);
+module.exports = mongoose.model('Item', itemSchema);
