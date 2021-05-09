@@ -6,6 +6,8 @@ const buildSchema = new Schema({
     name: String,
     god: { type: Schema.Types.ObjectId, ref: 'God' },
     item: { type: Schema.Types.ObjectId, ref: 'Item'}
+}, {
+    timestamps: true
 });
 
 
