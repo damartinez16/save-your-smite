@@ -4,16 +4,9 @@ const bcrypt = require('bcrypt');
 
 module.exports = {
   create,
-  login,
-  checkToken
+  login
 };
 
-function checkToken(req, res) {
-  // req.user will always be there IF a valid token was sent
-  // in the fetch request
-  console.log(req.user);
-  res.json(req.exp);
-}
 
 async function create(req, res) {
   try {
