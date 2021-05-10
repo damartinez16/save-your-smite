@@ -21,7 +21,7 @@ export default function App() {
               <LandingPage />
             </Route>
             <Route path="/build/new">
-              <NewBuildPage />
+              <NewBuildPage user={user} setUser={setUser}/>
             </Route>
             <Route path="/orders">
               <OrderHistoryPage />

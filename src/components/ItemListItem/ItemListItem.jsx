@@ -1,6 +1,11 @@
 
-export default function itemListItem() {
+export default function ItemListItem({item}) {
   return (
-    <h1>ItemListItem</h1>
+    <div className="item">
+    {/* <div className="pic flex-ctr-ctr">{item.ItemDescription.itemIcon_URL}</div>
+    <div className="name">{item.DeviceName}</div>
+    <div className="buy">
+    </div> */}
+  </div>
   );
 }
