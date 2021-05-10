@@ -8,18 +8,13 @@ const itemSchema = new Schema({
         Menuitems: [{
             Description: String,
             Value: String
-        },
-        {
-            Description: String,
-            Value: String
-        }
-        ],
-        ItemTier: Number,
+        }],
         SecondaryDescription: String,
-        Price: Number,
-        type: String,
-        itemIcon_URL: String
     },
+    ItemTier: Number,
+    Price: Number,
+    Type: String,
+    itemIcon_URL: String
 }, {
     timestamps: true
 });

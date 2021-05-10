@@ -4,7 +4,7 @@ require('./config/database');
 
 // Require the Mongoose models
 const User = require('./models/user');
-// const Item = require('./models/item');
+const Item = require('./models/item');
 // const Category = require('./models/category');
 // const Order = require('./models/order');
 
@@ -19,6 +19,8 @@ async function main() {
   const users = await User.find({});
   console.log(users);
 
+  const items = await Item.find({});
+  console.log(items)
 
   // process.exit();
 }

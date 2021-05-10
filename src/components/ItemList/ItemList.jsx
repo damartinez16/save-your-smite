@@ -2,7 +2,7 @@ import ItemListItem from "../ItemListItem/ItemListItem"
 
 export default function ItemList({items}) {
     const builditems = items.map(item =>
-       console.log(item)
+      <ItemListItem item={item}/>
     )
 return (
     <div>

@@ -7,7 +7,7 @@ const God = require('./models/god');
 (async function () {
 
     await God.deleteMany({});
-    const god = await God.create([
+    const gods = await God.create([
         {
             id: "Achilles",
             name: "Achilles",
@@ -776,7 +776,7 @@ const God = require('./models/god');
         }
     ])
 
-
+console.log(gods);
 
     await Item.deleteMany({});
     const items = await Item.create(
