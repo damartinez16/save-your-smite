@@ -5,7 +5,8 @@ import AuthPage from '../AuthPage/AuthPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
-import BuildPage from '../BuildPage/BuildPage';
+import NewBuildPage from '../NewBuildPage/NewBuildPage';
+import LandingPage from '../LandingPage/LandingPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -16,13 +17,16 @@ export default function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Switch>
+            <Route path="/home">
+              <LandingPage />
+            </Route>
             <Route path="/build/new">
-              <BuildPage />
+              <NewBuildPage />
             </Route>
             <Route path="/orders">
               <OrderHistoryPage />
             </Route>
-            <Redirect to="/orders" />
+            <Redirect to="/home" />
           </Switch>
         </>
         :
