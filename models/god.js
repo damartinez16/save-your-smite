@@ -6,7 +6,8 @@ const godSchema = new Schema({
     id : String,
     name: { type: String, required: true},
     filename: String,
-    type: String
+    type: String,
+    selected: { type: Boolean, default: false} 
 }, {
     timestamps: true
 });

@@ -7,6 +7,8 @@ import * as itemsAPI from '../../utilities/items-api';
 export default function NewBuildPage({user, setUser}) {
 const [items, setItems] = useState([]);
 const [gods, setGods] = useState([]);
+const [build, setBuild] = useState([]);
+
 
 useEffect(function() {
   async function getGods() {
@@ -23,10 +25,16 @@ useEffect(function() {
   getItems();
 }, []);
 
+
+/*------ Event Handlers ------*/
+
+
+
+
   return (
     <>
     <h1>Pick a God To Create Build</h1>
-    <GodList gods={gods} />
+    <GodList gods={gods}/>
     {/* <ItemList items={items}/> */}
     </>
     ) 

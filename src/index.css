@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color:rgb(179, 164, 105);
 }
 
 code {
@@ -35,7 +36,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--tan-4);
+  background-color: black;  
   padding: 2vmin;
   height: 100vh;
 }
@@ -135,13 +136,13 @@ button, a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
-  background-color: var(--orange);
+  background-color:black;
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  border: .1vmin solid var(--tan-2);
-  border-radius: .5vmin;
+  border: .5vmin groove rgb(179, 164, 105);
+  border-radius: .3vmin;
   outline: none;
   cursor: pointer;
 }
