@@ -15,3 +15,7 @@ export function getBuild() {
 export function addItemToBuild(itemId) {
   return sendRequest(`${BASE_URL}/build/items/${itemId}`, 'POST');
 }
+
+export function saveBuild() {
+    return sendRequest(`${BASE_URL}/build/saveBuild`, 'POST');
+}

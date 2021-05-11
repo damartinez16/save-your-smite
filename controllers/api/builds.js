@@ -21,7 +21,7 @@ async function build(req, res) {
 
 
 async function addToBuild(req, res) {
-    const build = await Order.getBuild(req.user._id);
+    const build = await Build.getBuild(req.user._id);
     await build.addItemToBuild(req.params.id); 
     res.json(build);
   }
