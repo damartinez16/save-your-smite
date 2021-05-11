@@ -1,4 +1,4 @@
-const Build = require('../../models/order');
+const Build = require('../../models/build');
 
 
 module.exports = {
@@ -14,13 +14,14 @@ async function index(req, res) {
   }
 
 async function build(req, res) {
-    // A cart is the unpaid order for a user
+  
     const build = await Build.getBuild(req.user._id);
     res.json(build);
   }
 
 
 async function addToBuild(req, res) {
+    console.log('sad')
     const build = await Build.getBuild(req.user._id);
     await build.addItemToBuild(req.params.id); 
     res.json(build);
