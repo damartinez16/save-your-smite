@@ -162,14 +162,14 @@ const God = require('./models/god');
         {
             id: "Cabrakan",
             name: "Cabrakan",
-            filename: "https://webcdn.hirezstudios.com/smite/god-cards/camazotz.jpg",
+            filename: "https://webcdn.hirezstudios.com/smite/god-cards/cabrakan.jpg",
             type: "Guardian",
             short_id: "18"
         },
         {
             id: "Camazotz",
             name: "Camazotz",
-            filename: "Camazotz.png",
+            filename: "https://webcdn.hirezstudios.com/smite/god-cards/camazotz.jpg",
             type: "Assassin",
             short_id: "18x"
         },
@@ -209,14 +209,14 @@ const God = require('./models/god');
         {
             id: "Chiron",
             name: "Chiron",
-            filename: "https://webcdn.hirezstudios.com/smite/god-cards/chronos.jpg",
+            filename: "https://webcdn.hirezstudios.com/smite/god-cards/chiron.jpg",
             type: "Hunter",
             short_id: "70"
         },
         {
             id: "Chronos",
             name: "Chronos",
-            filename: "Chronos.jpg",
+            filename: "https://webcdn.hirezstudios.com/smite/god-cards/chronos.jpg",
             type: "Mage",
             short_id: "21"
         },
@@ -254,7 +254,7 @@ const God = require('./models/god');
         {
             id: "Discordia",
             name: "Discordia",
-            filename: "url(\"https://webcdn.hirezstudios.com/smite/god-cards/discordia.jpg",
+            filename: "https://webcdn.hirezstudios.com/smite/god-cards/discordia.jpg",
             type: "Mage"
         },
         {
@@ -471,7 +471,7 @@ const God = require('./models/god');
         {
             id: "Merlin",
             name: "Merlin",
-            filename: "url(\"https://webcdn.hirezstudios.com/smite/god-cards/merlin.jpg",
+            filename: "https://webcdn.hirezstudios.com/smite/god-cards/merlin.jpg",
             type: "Mage"
         },
         {
@@ -483,7 +483,7 @@ const God = require('./models/god');
         {
             id: "Ne_Zha",
             name: "Ne Zha",
-            filename: "https://webcdn.hirezstudios.com/smite/god-cards/ne-zha.jpg",
+            filename: "https://www.google.com/search?q=smite+neh+zha&tbm=isch&ved=2ahUKEwiR68uxi8LwAhWkl60KHWC-CC0Q2-cCegQIABAA&oq=smite+neh+zha&gs_lcp=CgNpbWcQAzoECCMQJzoECAAQQzoCCABQ7SVYiEVg30ZoAnAAeACAAaYFiAGHC5IBBzMuNC41LTGYAQCgAQGqAQtnd3Mtd2l6LWltZ7gBA8ABAQ&sclient=img&ei=K7aaYNGpJaSvtgXg_KLoAg&bih=857&biw=931&hl=en#imgrc=i0mxvGk3yx2Z3M",
             type: "Assassin",
             short_id: "42"
         },

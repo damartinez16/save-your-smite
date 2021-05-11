@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import AuthPage from '../AuthPage/AuthPage';
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+import BuildsIndexPage from '../BuildsIndexPage/BuildsIndexPage';
 import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
 import NewBuildPage from '../NewBuildPage/NewBuildPage';
@@ -23,8 +23,8 @@ export default function App() {
             <Route path="/build/new">
               <NewBuildPage user={user} setUser={setUser}/>
             </Route>
-            <Route path="/orders">
-              <OrderHistoryPage />
+            <Route path="/builds">
+              <BuildsIndexPage />
             </Route>
             <Redirect to="/home" />
           </Switch>

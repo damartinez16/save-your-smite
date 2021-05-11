@@ -1,11 +1,11 @@
 import * as userService from '../../utilities/users-service';
 
-export default function OrderHistoryPage() {
+export default function BuildsIndexPage() {
 
 
   return (
     <>
-      <h1>OrderHistoryPage</h1>
+      <h1>BuildsIndexPage</h1>
       
     </>
   );
