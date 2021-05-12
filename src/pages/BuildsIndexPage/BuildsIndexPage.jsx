@@ -12,12 +12,12 @@ export default function BuildsIndexPage() {
       const submittedBuilds = builds.filter(build => build.isSubmitted);
       setSavedBuilds(submittedBuilds);
     }
-  })
+    getBuilds();
+  }, []);
 
   return (
-    <>
-      <h1>BuildsIndexPage</h1>
-      
-    </>
+   <main>
+     <div>BuildsIndex</div>
+   </main>
   );
 }
