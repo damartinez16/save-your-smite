@@ -24,7 +24,7 @@ export default function App() {
               <NewBuildPage user={user} setUser={setUser}/>
             </Route>
             <Route path="/builds">
-              <BuildsIndexPage />
+              <BuildsIndexPage user={user} setUser={setUser}/>
             </Route>
             <Redirect to="/home" />
           </Switch>
