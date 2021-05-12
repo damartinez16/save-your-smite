@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { useHistory } from 'react-router-dom';
 import ItemList from "../../components/ItemList/ItemList";
 import GodList from "../../components/GodList/GodList";
 import BuildDetail from "../../components/BuildDetail/BuildDetail";
@@ -16,6 +17,8 @@ const [build, setBuild] = useState({
   items: [],
   isSubmitted: false
 })
+
+const history = useHistory();
 
 
 useEffect(function() {
@@ -57,6 +60,11 @@ async function handleAddGodToBuild(godId) {
   setBuild(updatedBuild);
 }
 
+async function handleSaveBuild() {
+  await buildsAPI.saveBuild();
+  history.push('/builds');
+}
+
   return (
     <>
     <h1>PICK A GOD TO CREATE A BUILD</h1>
@@ -66,7 +74,7 @@ async function handleAddGodToBuild(godId) {
     <ItemList items={items} handleAddToBuild={handleAddToBuild}/>
     <br/>
     <br/>
-    <BuildDetail build={build}/>
+    <BuildDetail build={build} handleSaveBuild={handleSaveBuild}/>
     </>
     ) 
     
