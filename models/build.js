@@ -32,6 +32,7 @@ buildSchema.methods.addGodToBuild = async function (godId) {
     return
   } else {
     const god = await mongoose.model('God').findById(godId)
+    god.selected = true;
     build.god = god
   }
   return build.save();

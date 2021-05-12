@@ -46,7 +46,10 @@ console.log(build)
 
 async function handleAddToBuild(itemId) {
   const updatedBuild = await buildsAPI.addItemToBuild(itemId);
-  setBuild(updatedBuild);
+  if (updatedBuild.items.length < 10) {
+    setBuild(updatedBuild);
+  }
+  return 
 }
 
 async function handleAddGodToBuild(godId) {

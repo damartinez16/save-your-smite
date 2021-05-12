@@ -37,6 +37,9 @@ async function addGod(req, res) {
   res.json(build);
 }
 
-  function saveBuild() {
-
+async function saveBuild(req, res) {
+    const build = await Build.getBuild(req.user._id);
+    build.isSubmitted = true;
+    await build.save();
+    res.json(build);
   }
