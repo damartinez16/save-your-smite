@@ -75,6 +75,8 @@ async function handleSaveBuild() {
     <br/>
     <br/>
     <BuildDetail build={build} handleSaveBuild={handleSaveBuild}/>
+    <br/>
+    <br/>
     </>
     ) 
     
