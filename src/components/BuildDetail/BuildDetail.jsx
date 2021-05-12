@@ -8,7 +8,7 @@ export default function BuildDetail({build}) {
         <div>{build.god}</div>
         <div>{build.items}</div>
         {build.items.map((item) => 
-        <div>{item}</div>
+        <div>{item.name}</div>
         ) }
         </>
     )

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Scema;
+const Schema = mongoose.Schema;
 
 const buildSchema = new Schema({
     user: { type: Schema.Types.ObjectId, ref: 'User' },
@@ -14,12 +14,12 @@ const buildSchema = new Schema({
 buildSchema.methods.addItemToBuild = async function (itemId) {
 
     const build = this;
-    const buildItem = build.items.find(buildItem => buildItem.item._id.equals(itemId));
+    const buildItem = build.items.find(buildItem => buildItem._id.equals(itemId));
     if (buildItem) {
       return
     } else {
       const item = await mongoose.model('Item').findById(itemId);
-      build.items.push({ item });
+      build.items.push( item );
       
     }
     // return the save() method's promise

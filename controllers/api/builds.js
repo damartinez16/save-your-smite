@@ -1,10 +1,11 @@
 const Build = require('../../models/build');
-
+const Item = require('../../models/item');
 
 module.exports = {
     index,
     build,
   addToBuild,
+  saveBuild
 };
 
 
@@ -25,4 +26,9 @@ async function addToBuild(req, res) {
     const build = await Build.getBuild(req.user._id);
     await build.addItemToBuild(req.params.id); 
     res.json(build);
+    console.log(build);
+  }
+
+  function saveBuild() {
+
   }

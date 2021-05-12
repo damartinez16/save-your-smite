@@ -1,0 +1,23 @@
+.itemIcon {
+    height: 60px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.itemDescription {
+   text-align: left;
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow:auto;
+    height: 7vh;
+}
+
+.itemButton {
+    width: 20vmin;
+    height: 20vmin;
+}
