@@ -6,7 +6,7 @@ module.exports = {
 };
 
 async function index(req, res) {
-  const items = await Item.find({}).sort('name')
+  const items = await Item.find({}).sort('name');
   res.json(items);
 }
 

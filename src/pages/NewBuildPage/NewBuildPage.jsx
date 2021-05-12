@@ -9,6 +9,7 @@ import * as buildsAPI from '../../utilities/builds-api';
 export default function NewBuildPage({user, setUser}) {
 const [items, setItems] = useState([]);
 const [gods, setGods] = useState([]);
+const [activeGodIdx, setActiveGodIdx] = useState(null);
 const [build, setBuild] = useState({
   name: '',
   god: '',
@@ -52,8 +53,12 @@ async function handleAddToBuild(itemId) {
   return (
     <>
     <h1>PICK A GOD TO CREATE A BUILD</h1>
-    <GodList gods={gods}/>
+    <GodList gods={gods} activeGodIdx={activeGodIdx} setActiveGodIdx={setActiveGodIdx}/>
+    <br/>
+    <br/>
     <ItemList items={items} handleAddToBuild={handleAddToBuild}/>
+    <br/>
+    <br/>
     <BuildDetail build={build}/>
     </>
     ) 

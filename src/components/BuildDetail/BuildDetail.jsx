@@ -4,12 +4,9 @@ export default function BuildDetail({build}) {
     return (
         <>
         <h1>details</h1>
-        <div>{build.name}</div>
-        <div>{build.god}</div>
-        <div>{build.items}</div>
-        {build.items.map((item) => 
-        <div>{item.name}</div>
-        ) }
+    <div>{build.items}</div>
+        
+    
         </>
     )
 }

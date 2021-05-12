@@ -1,9 +1,9 @@
 import GodListItem from '../GodListItem/GodListItem';
-export default function GodList({gods}) {
+export default function GodList({gods, setActiveGodIdx, ActiveGodIdx}) {
     return (
-        <div>
+        <div className="godList">
         {gods.map((god, idx) => 
-        <GodListItem god={god}/>
+        <GodListItem key={idx} idx={idx} god={god} setActiveGodIdx={setActiveGodIdx} ActiveGodIdx={ActiveGodIdx}/>
         )}
         </div>
     )
