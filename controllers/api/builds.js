@@ -5,12 +5,13 @@ module.exports = {
     index,
     build,
   addToBuild,
+  addGod,
   saveBuild
 };
 
 
 async function index(req, res) {
-    const builds = await Build.find({}).populate('items').exec();
+    const builds = await Build.find({});
     res.json(builds);
   }
 
@@ -28,6 +29,13 @@ async function addToBuild(req, res) {
     res.json(build);
     console.log(build);
   }
+
+
+async function addGod(req, res) {
+  const build = await Build.getBuild(req.user._id);
+  await build.addGodToBuild(req.params.id);
+  res.json(build);
+}
 
   function saveBuild() {
 

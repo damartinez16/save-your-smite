@@ -49,11 +49,15 @@ async function handleAddToBuild(itemId) {
   setBuild(updatedBuild);
 }
 
+async function handleAddGodToBuild(godId) {
+  const updatedBuild = await buildsAPI.addGodToBuild(godId);
+  setBuild(updatedBuild);
+}
 
   return (
     <>
     <h1>PICK A GOD TO CREATE A BUILD</h1>
-    <GodList gods={gods} activeGodIdx={activeGodIdx} setActiveGodIdx={setActiveGodIdx}/>
+    <GodList gods={gods} activeGodIdx={activeGodIdx} setActiveGodIdx={setActiveGodIdx} handleAddGodToBuild={handleAddGodToBuild}/>
     <br/>
     <br/>
     <ItemList items={items} handleAddToBuild={handleAddToBuild}/>

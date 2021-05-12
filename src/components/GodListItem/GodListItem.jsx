@@ -1,7 +1,7 @@
-export default function GodListItem({god, idx, setActiveGodIdx, activeGodIdx}) {
+export default function GodListItem({god, idx, setActiveGodIdx, activeGodIdx, handleAddGodToBuild}) {
     return (
-        <button >
-      <div onClick={() => { setActiveGodIdx(idx)}} className="god" className={idx === activeGodIdx ? 'selected' : 'unselected'} >
+        <button onClick={() => handleAddGodToBuild(god._id)}>
+      <div>
           <img src={god.filename} alt="god icon"/>
       <div className="name flex-ctr-ctr">{god.name}</div>
       <div className="name flex-ctr-ctr">{god.type}</div>

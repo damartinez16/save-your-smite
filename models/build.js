@@ -25,6 +25,18 @@ buildSchema.methods.addItemToBuild = async function (itemId) {
     // return the save() method's promise
     return build.save();
   };
+  
+buildSchema.methods.addGodToBuild = async function (godId) {
+  const build = this;
+  if (build.length) {
+    return
+  } else {
+    const god = await mongoose.model('God').findById(godId)
+    build.god = god
+  }
+  return build.save();
+}
+
 
 buildSchema.statics.getBuild = function(userId) {
     return this.findOneAndUpdate(
@@ -32,7 +44,7 @@ buildSchema.statics.getBuild = function(userId) {
       { user: userId, isSubmitted: false },
       { user: userId },
       { upsert: true, new: true }
-    );
+    )
   };
 
 
