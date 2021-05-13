@@ -5,7 +5,11 @@ export default function BuildListItem({user,build, activeBuild, setActiveBuild, 
     return (
     <div>
     <button onClick={() => setActiveBuild(build)}>
-        {build.god}
+        <div>
+        <div>{build.god.name}</div> 
+        <img src={build.god.filename} alt=""/>
+        <div>{build.god.type}</div>
+        </div>
         {build.items.map((i) => (
             <img src={i.itemIcon_URL} alt="item icon"/>
         ))}

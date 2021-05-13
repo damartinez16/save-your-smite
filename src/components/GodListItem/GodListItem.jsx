@@ -2,7 +2,7 @@ export default function GodListItem({god, idx, setActiveGodIdx, activeGodIdx, ha
     return (
         <button onClick={() => handleAddGodToBuild(god._id)}>
       <div>
-          <img src={god.filename} alt="god icon"/>
+          <img className="god" src={god.filename} alt="god icon"/>
       <div className="name flex-ctr-ctr">{god.name}</div>
       <div className="name flex-ctr-ctr">{god.type}</div>
       </div>

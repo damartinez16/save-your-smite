@@ -14,7 +14,7 @@ export default function BuildDetail({build, handleSaveBuild}) {
             <img src={i.itemIcon_URL} alt="item icon"/> 
             </>
         ))}
-        <button onClick={handleSaveBuild}>Save Build</button>
+        
         </div>
     )
 }

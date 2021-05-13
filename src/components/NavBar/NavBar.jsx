@@ -8,7 +8,8 @@ export default function NavBar({ user, setUser }) {
   }
 
   return (
-    <nav>
+    <nav className="nav">
+      <Link className="logonav" to="/"> <img src="https://i.imgur.com/5W5UW5b.png" alt="" height="50px"/></Link>
       <Link to="/builds">All Builds</Link>
       &nbsp; | &nbsp;
       <Link to="/build/new">New Build</Link>

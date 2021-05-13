@@ -13,7 +13,7 @@ const [gods, setGods] = useState([]);
 const [activeGodIdx, setActiveGodIdx] = useState(null);
 const [build, setBuild] = useState({
   name: '',
-  god: '',
+  god: {},
   items: [],
   isSubmitted: false
 })
@@ -37,6 +37,7 @@ useEffect(function() {
 
   async function getBuild() {
     const build = await buildsAPI.getBuild();
+    if (!build.god) build.god = {}
     console.log(build)
     setBuild(build);
   }
@@ -78,6 +79,7 @@ async function handleSaveBuild() {
     <br/>
     <hr/>
     <BuildDetail build={build} handleSaveBuild={handleSaveBuild}/>
+    <button onClick={handleSaveBuild}>Save Build</button>
     <br/>
     <br/>
     </>

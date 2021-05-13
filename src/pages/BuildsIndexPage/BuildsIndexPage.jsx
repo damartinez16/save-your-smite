@@ -14,12 +14,14 @@ export default function BuildsIndexPage({user, setUser}) {
   useEffect(function() {
     async function getBuilds() {
       const builds = await buildsAPI.getAll();
+      console.log(builds)
       const submittedBuilds = builds.filter(build => build.isSubmitted);
       setSavedBuilds(submittedBuilds);
       
     }
     getBuilds();
   }, [activeBuild]);
+  console.log(savedBuilds)
   
   console.log(activeBuild)
   async function deleteBuild(buildId) {

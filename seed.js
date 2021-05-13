@@ -223,7 +223,7 @@ const God = require('./models/god');
         {
             id: "Cthulhu",
             name: "Cthulhu",
-            filename: "https://webcdn.hirezstudios.com/smite/god-cards/cthulhu.jpg",
+            filename: "https://i.imgur.com/2IBUGS6.png",
             type: "Guardian"
         },
         {
@@ -248,7 +248,7 @@ const God = require('./models/god');
         {
             id: "Danzaburou",
             name: "Danzaburou",
-            filename: "https://webcdn.hirezstudios.com/smite/god-cards/danzaburou.jpg",
+            filename: "https://i.imgur.com/qKJTne2.png",
             type: "Hunter"
         },
         {
@@ -464,7 +464,7 @@ const God = require('./models/god');
         {
             id: "Mercury",
             name: "Mercury",
-            filename: "https://webcdn.hirezstudios.com/smite/god-cards/mercury.jpg",
+            filename: "https://i.imgur.com/0FMpwdH.png",
             type: "Assassin",
             short_id: "41"
         },
@@ -477,13 +477,13 @@ const God = require('./models/god');
         {
             id: "Mulan",
             name: "Mulan",
-            filename: "https://webcdn.hirezstudios.com/smite/god-cards/mulan.jpg",
+            filename: "https://i.imgur.com/9w4uZmh.png",
             type: "Warrior"
         },
         {
             id: "Ne_Zha",
             name: "Ne Zha",
-            filename: "https://www.google.com/search?q=smite+neh+zha&tbm=isch&ved=2ahUKEwiR68uxi8LwAhWkl60KHWC-CC0Q2-cCegQIABAA&oq=smite+neh+zha&gs_lcp=CgNpbWcQAzoECCMQJzoECAAQQzoCCABQ7SVYiEVg30ZoAnAAeACAAaYFiAGHC5IBBzMuNC41LTGYAQCgAQGqAQtnd3Mtd2l6LWltZ7gBA8ABAQ&sclient=img&ei=K7aaYNGpJaSvtgXg_KLoAg&bih=857&biw=931&hl=en#imgrc=i0mxvGk3yx2Z3M",
+            filename: "https://i.imgur.com/72LDgAE.png",
             type: "Assassin",
             short_id: "42"
         },
@@ -696,13 +696,13 @@ const God = require('./models/god');
         {
             id: "Tiamat",
             name: "Tiamat",
-            filename: "https://webcdn.hirezstudios.com/smite/god-cards/tiamat.jpg",
+            filename: "https://i.imgur.com/i6oznhq.png",
             type: "Mage"
         },
         {
             id: "Tsukuyomi",
             name: "Tsukuyomi",
-            filename: "https://webcdn.hirezstudios.com/smite/god-cards/tsukuyomi.jpg",
+            filename: "https://i.imgur.com/hZD2tyI.png",
             type: "Assassin"
         },
         {
@@ -6415,7 +6415,7 @@ console.log(gods);
                 ShortDesc: "Deals damage to minions and jungle monsters.",
                 StartingItem: false,
                 Type: "Active",
-                itemIcon_URL: "https://web2.hirez.com/smite/item-icons/*hand-of-the-gods.jpg",
+                itemIcon_URL: "https://i.imgur.com/eVpAxMG.png",
                 ret_msg: null
             },
             {
@@ -6436,7 +6436,7 @@ console.log(gods);
                 ShortDesc: "Deals damage to minions and jungle monsters. Stuns enemy gods.",
                 StartingItem: false,
                 Type: "Active",
-                itemIcon_URL: "https://web2.hirez.com/smite/item-icons/hand-of-the-gods-upgrade.jpg",
+                itemIcon_URL: "https://i.imgur.com/eVpAxMG.png",
                 ret_msg: null
             },
             {

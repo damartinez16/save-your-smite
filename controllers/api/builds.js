@@ -12,14 +12,14 @@ module.exports = {
 
 
 async function index(req, res) {
-    const builds = await Build.find({}).populate('items').exec();
+    const builds = await Build.find({}).populate(['items', 'god']).exec();
+    console.log('SAD', builds)
     res.json(builds);
   }
 
 async function build(req, res) {
 
     const build = await Build.getBuild(req.user._id);
-    console.log(build)
     res.json(build);
   }
 
