@@ -37,6 +37,7 @@ useEffect(function() {
 
   async function getBuild() {
     const build = await buildsAPI.getBuild();
+    console.log(build)
     setBuild(build);
   }
   getBuild();

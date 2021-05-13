@@ -1,5 +1,18 @@
-export default function BuildList() {
+import BuildListItem from "../BuildListItem/BuildListItem";
+
+export default function BuildList({ savedBuilds, user, setUser, setActiveBuild, deleteBuild}) {
     return (
-        <h1>BuildList</h1>
+        <div>
+            {savedBuilds.map((b, idx) => 
+                <BuildListItem 
+                build={b}
+                 key={idx} 
+                 setActiveBuild={setActiveBuild}
+                 deleteBuild={deleteBuild}
+                 user={user}
+                 buildId={b._id}
+                 />
+            )}
+        </div>
     )
 }

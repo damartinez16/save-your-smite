@@ -9,7 +9,7 @@ export default function NavBar({ user, setUser }) {
 
   return (
     <nav>
-      <Link to="/builds">My Builds</Link>
+      <Link to="/builds">All Builds</Link>
       &nbsp; | &nbsp;
       <Link to="/build/new">New Build</Link>
       &nbsp; | &nbsp;

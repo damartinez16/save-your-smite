@@ -45,7 +45,14 @@ buildSchema.statics.getBuild = function(userId) {
       { user: userId, isSubmitted: false },
       { user: userId },
       { upsert: true, new: true }
-    )
+    ).populate({
+      path: 'items',
+      model: 'Item',
+      populate: {
+        path: 'god',
+        model: 'God'
+      }
+    }).exec();
   };
 
 
