@@ -72,9 +72,11 @@ async function handleSaveBuild() {
     <GodList gods={gods} activeGodIdx={activeGodIdx} setActiveGodIdx={setActiveGodIdx} handleAddGodToBuild={handleAddGodToBuild}/>
     <br/>
     <br/>
+    <hr/>
     <ItemList items={items} handleAddToBuild={handleAddToBuild}/>
     <br/>
     <br/>
+    <hr/>
     <BuildDetail build={build} handleSaveBuild={handleSaveBuild}/>
     <br/>
     <br/>

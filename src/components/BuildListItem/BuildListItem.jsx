@@ -6,7 +6,9 @@ export default function BuildListItem({user,build, activeBuild, setActiveBuild, 
     <div>
     <button onClick={() => setActiveBuild(build)}>
         {build.god}
-        {build.items}
+        {build.items.map((i) => (
+            <img src={i.itemIcon_URL} alt="item icon"/>
+        ))}
     </button>
     <button onClick={() => deleteBuild(buildId)}>Delete</button>
     </div>

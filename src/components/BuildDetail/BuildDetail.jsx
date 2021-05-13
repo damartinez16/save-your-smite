@@ -5,7 +5,12 @@ export default function BuildDetail({build, handleSaveBuild}) {
         <h1>details</h1>
         <div>{build.god}</div>
         {build.items.map((i) => (
-            <img src={i.itemIcon_URL} alt="item icon"/>
+            <>
+            <div>{i.DeviceName}</div>
+            <div>{i.Price} gold</div>
+            <div>{i.Type} gold</div>
+            <img src={i.itemIcon_URL} alt="item icon"/> 
+            </>
         ))}
         <button onClick={handleSaveBuild}>Save Build</button>
         </div>
