@@ -3,7 +3,9 @@ export default function BuildDetail({build, handleSaveBuild}) {
     return (
         <div>
         <h1>details</h1>
-        <div>{build.god}</div>
+        <div>{build.god.name}</div>
+        <img src={build.god.filename} alt="god icon"/>
+        <div>{build.god.type}</div>
         {build.items.map((i) => (
             <>
             <div>{i.DeviceName}</div>
