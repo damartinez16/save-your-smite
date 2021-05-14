@@ -154,3 +154,26 @@ button[type="submit"] {
   -webkit-transform: scale(1.1);
   transform: scale(0.95);
  }
+ 
+ .landingimages {
+   margin-top: 20px;
+   display: flex;
+    justify-content:center;
+ }
+ .landingimages div:first-child{
+   border-left: rgb(179, 164, 105) groove 3px;
+   padding-left: 50px;
+   padding-right: 55px;
+ }
+ .landingimages div:nth-child(3) {
+  border-right: rgb(179, 164, 105) groove 3px;
+  padding-left: 0;
+ }
+
+ .landingimages div:nth-child(2) {
+   border-left: rgb(179, 164, 105) groove 3px;
+   left: 50%;
+   margin-left: 3px;
+   padding-left: 50px;
+   top: 0;
+ }

@@ -5,18 +5,12 @@ export default function ItemListItem({item, handleAddToBuild}) {
     <div className="item">
         <div className="info">
     <div className="name">{item.DeviceName}</div>
+    <br/>
     <img className="itemIcon" src={item.itemIcon_URL}/>
+    <br/>
     <div className="gold">{item.Price} gold</div>
-    <div>{item.Type}</div>
+    <div className="type">{item.Type}</div>
     </div>
-    {/* <div className="itemDescription">
-    <div>{item.ItemDescription.Description}</div>
-    {item.ItemDescription.Menuitems.map((menI) => 
-        <div>{menI.Description}{menI.Value}</div>
-        )}
-    <div>{item.ItemDescription.MenuItems}</div>
-    <div>{item.ItemDescription.SecondaryDescription}</div>
-    </div> */}
   </div> 
         </button>
 

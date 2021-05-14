@@ -1,23 +1,31 @@
 .itemIcon {
-    height: 60px;
+  height: 50px;
 }
 .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .itemDescription {
-   text-align: left;
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow:auto;
-    height: 7vh;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  height: 7vh;
 }
 
 .itemButton {
-    width: 20vmin;
-    height: 20vmin;
+  width: 8rem;
+  height: 8.5rem;
+  font-size: 12px;
+}
+
+.gold, .type {
+    font-size: .5rem;
+}
+.name {
+    color:rgb(179, 164, 105);
+    font-size: .8rem;
 }

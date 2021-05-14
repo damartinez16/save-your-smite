@@ -51,10 +51,7 @@ useEffect(function() {
 
 async function handleAddToBuild(itemId) {
   const updatedBuild = await buildsAPI.addItemToBuild(itemId);
-  if (updatedBuild.items.length < 10) {
     setBuild(updatedBuild);
-  }
-  return 
 }
 
 async function handleAddGodToBuild(godId) {

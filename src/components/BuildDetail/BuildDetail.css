@@ -6,3 +6,16 @@
     flex-direction: column;
    justify-content: center;
 }
+.detailgodcontain {
+    border: 2px groove rgb(179, 164, 105);
+}
+.itemsdetail img {
+    height: 60px;
+}
+.itemsdetail {
+    display: flex;
+    justify-content: space-between;
+}
+.table {
+    text-align: left;
+}
