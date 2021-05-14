@@ -8,15 +8,19 @@ export default function NavBar({ user, setUser }) {
   }
 
   return (
+    <>
     <nav className="nav">
       <Link className="logonav" to="/"> <img src="https://i.imgur.com/5W5UW5b.png" alt="" height="50px"/></Link>
-      <Link to="/builds">All Builds</Link>
+      <Link to="/builds">ALL BUILDS</Link>
       &nbsp; | &nbsp;
-      <Link to="/build/new">New Build</Link>
+      <Link to="/build/new">NEW BUILD</Link>
       &nbsp; | &nbsp;
-      <span>Welcome, {user.name}</span>
+      <span>WELCOME, {user.name}</span>
       &nbsp; | &nbsp;
-      <Link to="" onClick={handleLogOut}>Log Out</Link>
+      <Link to="" onClick={handleLogOut}>LOG OUT</Link>
     </nav>
+    <br/>
+    <hr/>
+    </>
   );
 }

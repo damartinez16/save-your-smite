@@ -9,13 +9,6 @@ body {
 /* CSS Custom Properties */
 :root {
   --white: #FFFFFF;
-  --tan-1: #FBF9F6;
-  --tan-2: #E7E2DD;
-  --tan-3: #E2D9D1;
-  --tan-4: #D3C1AE;
-  --orange: #F67F00;
-  --text-light: #968c84;
-  --text-dark: #615954;
 }
 
 *, *:before, *:after {
@@ -53,18 +46,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.flex-j-end {
-  justify-content: flex-end;
-}
-
-.scroll-y {
-  overflow-y: scroll;
 }
 
 .section-heading {
@@ -165,3 +146,7 @@ button[type="submit"] {
   height: 20rem;
   width: 10rem;
 }
+ hr {
+   border: 1.5px groove rgb(179, 164, 105);
+   background-color: rgb(179, 164, 105);
+ }

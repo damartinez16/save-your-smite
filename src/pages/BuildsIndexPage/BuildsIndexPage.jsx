@@ -20,18 +20,23 @@ export default function BuildsIndexPage({user, setUser}) {
       
     }
     getBuilds();
-  }, [activeBuild]);
+  }, [savedBuilds]);
   console.log(savedBuilds)
   
   console.log(activeBuild)
   async function deleteBuild(buildId) {
     await buildsAPI.deleteBuild(buildId);
+    const builds = await buildsAPI.getAll()
+    setSavedBuilds(builds)
     setActiveBuild(null);
-    history.push('/builds')
+    // history.push('/builds')
   }
 
   return (
-   <main>
+    <>
+    <br/>
+    <br/>
+   <main className="buildindex">
      <BuildList 
      user={user} 
      setUser={setUser} 
@@ -40,7 +45,11 @@ export default function BuildsIndexPage({user, setUser}) {
      savedBuilds={savedBuilds} 
      deleteBuild={deleteBuild}
       />
+      <br/>
+      <hr/>
+      <br/>
      <BuildDetail build={activeBuild}/>
    </main>
+   </>
   );
 }

@@ -1,0 +1,8 @@
+.emptygod {
+    display: none;
+}
+.buildindex {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}

@@ -1,0 +1,38 @@
+.buildindexitem {
+    color:rgb(179, 164, 105);
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.buildindexcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px;
+}
+
+.itemscontainer {
+    border: rgb(179, 164, 105) groove 3px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: .3rem;
+    margin: 0 10px;
+}
+
+.buildindexitem img {
+    height: 200px;
+    width: 120px;
+}
+
+.itemscontainer img {
+    height: 70px;
+}
+
+hr {
+    border: 1.5px groove rgb(179, 164, 105);
+    background-color: rgb(179, 164, 105);
+    width: 90%;
+  }
