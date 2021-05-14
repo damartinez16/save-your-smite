@@ -38,14 +38,14 @@ useEffect(function() {
   async function getBuild() {
     const build = await buildsAPI.getBuild();
     if (!build.god) build.god = {}
-    console.log(build)
+    console.log(build.user)
     setBuild(build);
   }
   getBuild();
   
 }, []);
 
-console.log(build)
+
 
 /*------ Event Handlers ------*/
 

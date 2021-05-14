@@ -1,14 +1,14 @@
 import './BuildListItem.css'
-import { deleteBuild } from "../../utilities/builds-api";
 
 
-export default function BuildListItem({user,build, activeBuild, setActiveBuild, deleteBuld, buildId}) {
+
+export default function BuildListItem({user, build, activeBuild, setActiveBuild, buildId, deleteBuild}) {
     return (
     <div className="buildindexcontainer">
     <button className="buildindexitem" onClick={() => setActiveBuild(build)}>
         <div>
         <div>{build.god.name}</div> 
-        <img src={build.god.filename} alt=""/>
+        <img src={build.god.filename} alt="god icon"/>
         <div>{build.god.type}</div>
         </div>
         </button>
@@ -18,7 +18,7 @@ export default function BuildListItem({user,build, activeBuild, setActiveBuild, 
         ))}
         </div>
     
-    <button onClick={() => deleteBuild(buildId)}>X</button>
+    <button style={{visibility: user._id === build.user ? "visible" : "hidden"}} onClick={() => deleteBuild(buildId)}>X</button>
     </div>
     )
 }

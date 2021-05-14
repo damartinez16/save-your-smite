@@ -13,7 +13,6 @@ module.exports = {
 
 async function index(req, res) {
     const builds = await Build.find({}).populate(['items', 'god']).exec();
-    console.log('SAD', builds)
     res.json(builds);
   }
 
@@ -47,7 +46,6 @@ async function saveBuild(req, res) {
   }
 
   async function deleteBuild(req, res) {
-    console.log('sad')
-    const build = await Build.findByIdAndDelete({_id : req.params.id});
+    const build = await Build.findByIdAndDelete( req.params.id );
     res.json(build);
   }

@@ -9,27 +9,24 @@ export default function BuildsIndexPage({user, setUser}) {
   const [savedBuilds, setSavedBuilds] = useState([]);
   const [activeBuild, setActiveBuild] = useState(null);
 
-  const history = useHistory();
 
   useEffect(function() {
     async function getBuilds() {
       const builds = await buildsAPI.getAll();
-      console.log(builds)
       const submittedBuilds = builds.filter(build => build.isSubmitted);
       setSavedBuilds(submittedBuilds);
       
     }
     getBuilds();
-  }, [savedBuilds]);
-  console.log(savedBuilds)
+  }, []);
   
-  console.log(activeBuild)
   async function deleteBuild(buildId) {
     await buildsAPI.deleteBuild(buildId);
     const builds = await buildsAPI.getAll()
-    setSavedBuilds(builds)
+    console.log(builds)
+    const submittedBuilds = builds.filter(build => build.isSubmitted);
+    setSavedBuilds(submittedBuilds)
     setActiveBuild(null);
-    // history.push('/builds')
   }
 
   return (
