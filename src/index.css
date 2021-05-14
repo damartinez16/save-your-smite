@@ -2,29 +2,29 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color:rgb(179, 164, 105);
+  color: rgb(179, 164, 105);
 }
-
 
 /* CSS Custom Properties */
 :root {
-  --white: #FFFFFF;
+  --white: #ffffff;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: 'Sarala', sans-serif;
+  font-family: "Sarala", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;  
+  background-color: black;
   padding: 2vmin;
   height: 100vh;
 }
-
 
 #root {
   height: 100%;
@@ -54,9 +54,9 @@ body {
   align-items: center;
   background-color: var(--tan-1);
   color: var(--text-dark);
-  border: .1vmin solid var(--tan-3);
+  border: 0.1vmin solid var(--tan-3);
   border-radius: 1vmin;
-  padding: .6vmin;
+  padding: 0.6vmin;
   text-align: center;
   font-size: 2vmin;
 }
@@ -64,7 +64,7 @@ body {
 .form-container {
   padding: 3vmin;
   background-color: var(--tan-1);
-  border: .1vmin solid var(--tan-3);
+  border: 0.1vmin solid var(--tan-3);
   border-radius: 1vmin;
 }
 
@@ -89,8 +89,8 @@ label {
 input {
   padding: 1vmin;
   font-size: 2vmin;
-  border: .1vmin solid var(--tan-3);
-  border-radius: .5vmin;
+  border: 0.1vmin solid var(--tan-3);
+  border-radius: 0.5vmin;
   color: var(--text-dark);
   background-image: none !important; /* prevent lastpass */
   outline: none;
@@ -100,32 +100,34 @@ input:focus {
   border-color: var(--orange);
 }
 
-button, a.button {
+button,
+a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
-  background-color:black;
+  background-color: black;
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  border: .5vmin groove rgb(179, 164, 105);
-  border-radius: .3vmin;
+  border: 0.5vmin groove rgb(179, 164, 105);
+  border-radius: 0.3vmin;
   outline: none;
   cursor: pointer;
 }
 
 button.btn-sm {
   font-size: 1.5vmin;
-  padding: .6vmin .8vmin;
+  padding: 0.6vmin 0.8vmin;
 }
 
 button.btn-xs {
   font-size: 1vmin;
-  padding: .4vmin .5vmin;
+  padding: 0.4vmin 0.5vmin;
 }
 
-button:disabled, form:invalid button[type="submit"] {
+button:disabled,
+form:invalid button[type="submit"] {
   cursor: not-allowed;
   background-color: var(--tan-4);
 }
@@ -146,34 +148,34 @@ button[type="submit"] {
   height: 20rem;
   width: 10rem;
 }
- hr {
-   border: 1.5px groove rgb(179, 164, 105);
-   background-color: rgb(179, 164, 105);
- }
- button:hover {
+hr {
+  border: 1.5px groove rgb(179, 164, 105);
+  background-color: rgb(179, 164, 105);
+}
+button:hover {
   -webkit-transform: scale(1.1);
   transform: scale(0.95);
- }
- 
- .landingimages {
-   margin-top: 20px;
-   display: flex;
-    justify-content:center;
- }
- .landingimages div:first-child{
-   border-left: rgb(179, 164, 105) groove 3px;
-   padding-left: 50px;
-   padding-right: 55px;
- }
- .landingimages div:nth-child(3) {
+}
+
+.landingimages {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.landingimages div:first-child {
+  border-left: rgb(179, 164, 105) groove 3px;
+  padding-left: 50px;
+  padding-right: 55px;
+}
+.landingimages div:nth-child(3) {
   border-right: rgb(179, 164, 105) groove 3px;
   padding-left: 0;
- }
+}
 
- .landingimages div:nth-child(2) {
-   border-left: rgb(179, 164, 105) groove 3px;
-   left: 50%;
-   margin-left: 3px;
-   padding-left: 50px;
-   top: 0;
- }
+.landingimages div:nth-child(2) {
+  border-left: rgb(179, 164, 105) groove 3px;
+  left: 50%;
+  margin-left: 3px;
+  padding-left: 50px;
+  top: 0;
+}

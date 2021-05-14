@@ -1,21 +1,35 @@
 .emptygod {
-    display: none;
+  display: none;
 }
 .buildindex {
-    display: flex;
-    flex-direction: column;
-   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .detailgodcontain {
-    border: 2px groove rgb(179, 164, 105);
+  border: 2px groove rgb(179, 164, 105);
 }
 .itemsdetail img {
-    height: 60px;
+  height: 60px;
 }
 .itemsdetail {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-evenly;
+  width: 70rem;
+  text-align: left;
 }
+
 .table {
-    text-align: left;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr [col-start]);
+}
+
+.itemsdetail div {
+  margin: 15px 20px;
+}
+.white {
+  color: white;
+  border: rgb(179, 164, 105) groove 2px;
+  padding: 5px;
+  border-radius: 0.1rem;
 }

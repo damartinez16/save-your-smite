@@ -20,7 +20,7 @@ export function addGodToBuild(godId) {
 }
 
 export function saveBuild() {
-    return sendRequest(`${BASE_URL}/build/saveBuild`);
+  return sendRequest(`${BASE_URL}/build/saveBuild`);
 }
 
 export function deleteBuild(buildId) {

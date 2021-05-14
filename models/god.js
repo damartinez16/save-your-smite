@@ -3,11 +3,11 @@ const Schema = mongoose.Schema;
 
 
 const godSchema = new Schema({
-    id : String,
-    name: { type: String, required: true},
+    id: String,
+    name: { type: String, required: true },
     filename: String,
     type: String,
-    selected: { type: Boolean, default: false} 
+    selected: { type: Boolean, default: false }
 }, {
     timestamps: true
 });

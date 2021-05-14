@@ -1,31 +1,30 @@
 nav {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 20px;
 }
 
-.nav a:hover{
-    color: rgb(179, 164, 105);
-    text-decoration: none;
-    background-color:transparent;
-    padding: 0 5px;
-    border-radius: .1rem;
-    border:rgb(179, 164, 105) groove 1px;
-    
+.nav a:hover {
+  color: rgb(179, 164, 105);
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0 5px;
+  border-radius: 0.1rem;
+  border: rgb(179, 164, 105) groove 1px;
 }
-.nav a{
-    color: rgb(179, 164, 105);
-    text-decoration: none;
+.nav a {
+  color: rgb(179, 164, 105);
+  text-decoration: none;
 }
 
 a.logonav:hover {
-    text-decoration: none;
-    background-color:transparent;
-    border:none;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
 }
 a.logonav {
-   left: 0;
-   margin: 20px auto 0 20px;
+  left: 0;
+  margin: 20px auto 0 20px;
 }
